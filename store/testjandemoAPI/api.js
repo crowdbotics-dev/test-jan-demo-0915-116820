@@ -8,6 +8,24 @@ function api_docs_schema_retrieve(payload) {
     params: { lang: payload.lang }
   })
 }
+function api_v1_example_list(payload) {
+  return testjandemoAPI.get(`/api/v1/example/`)
+}
+function api_v1_example_create(payload) {
+  return testjandemoAPI.post(`/api/v1/example/`, payload)
+}
+function api_v1_example_retrieve(payload) {
+  return testjandemoAPI.get(`/api/v1/example/${payload.id}/`)
+}
+function api_v1_example_update(payload) {
+  return testjandemoAPI.put(`/api/v1/example/${payload.id}/`, payload)
+}
+function api_v1_example_partial_update(payload) {
+  return testjandemoAPI.patch(`/api/v1/example/${payload.id}/`, payload)
+}
+function api_v1_example_destroy(payload) {
+  return testjandemoAPI.delete(`/api/v1/example/${payload.id}/`)
+}
 function api_v1_login_create(payload) {
   return testjandemoAPI.post(`/api/v1/login/`, payload)
 }
@@ -58,6 +76,12 @@ function rest_auth_user_partial_update(payload) {
 }
 export const apiService = {
   api_docs_schema_retrieve,
+  api_v1_example_list,
+  api_v1_example_create,
+  api_v1_example_retrieve,
+  api_v1_example_update,
+  api_v1_example_partial_update,
+  api_v1_example_destroy,
   api_v1_login_create,
   api_v1_signup_create,
   modules_camera_photos_user_list,
