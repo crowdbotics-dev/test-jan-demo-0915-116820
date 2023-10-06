@@ -1,7 +1,4 @@
-import {
-  StyleSheet
-} from 'react-native';
-
+import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   heading: {
     height: 60,
@@ -10,13 +7,12 @@ const styles = StyleSheet.create({
     padding: 20,
     alignItems: 'flex-end',
     flexDirection: 'row',
-    justifyContent: 'center',
-
+    justifyContent: 'center'
   },
   text: {
     color: '#000000',
     fontSize: 16,
-    width: '100%',
+    width: '100%'
   },
   icon: {
     width: 18,
@@ -31,7 +27,7 @@ const styles = StyleSheet.create({
   },
   header: {
     color: '#fff',
-    fontSize: 16,
+    fontSize: 16
   },
   photoBtn: {
     position: 'absolute',
@@ -44,39 +40,38 @@ const styles = StyleSheet.create({
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 2,
+      height: 2
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-    elevation: 5,
+    elevation: 5
   },
   photoBtnTxt: {
     color: '#fff'
   },
   card: {
-    padding: 10,
+    padding: 10
   },
   text: {
     fontSize: 28,
-    color: '#ffffff',
+    color: '#ffffff'
   },
   author: {
     fontSize: 18,
-    color: '#f2f2f2',
+    color: '#f2f2f2'
   },
   image: {
     height: 250,
     width: '100%',
     justifyContent: 'flex-end',
-    backgroundColor: 'lightslategray',
+    backgroundColor: 'lightslategray'
   },
   body: {
     padding: 10,
     fontSize: 16
   }
 });
-
 export default {
   buttonText: "+ Take Photo",
   styles: styles
-}
+};
